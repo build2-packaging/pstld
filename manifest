@@ -2,7 +2,7 @@
 name: pstld
 version: 0.1.0-a.0.z
 summary: pstld C++ library
-license: other: proprietary ; Not free/open source.
+license: LICENSE
 description-file: README.md
 url: https://example.org/pstld
 email: helmesjo@gmail.com
