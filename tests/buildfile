@@ -1,4 +1,4 @@
-import libs = pstld%lib{pstld}
+import libs = libpstld%lib{pstld}
 
 ./: exe{single_header_cpp-tests}: {hxx cxx}{*} $libs
 

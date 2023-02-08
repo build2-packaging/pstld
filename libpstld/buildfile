@@ -2,7 +2,7 @@ intf_libs = # Interface dependencies.
 impl_libs = # Implementation dependencies.
 #import xxxx_libs += libhello%lib{hello}
 
-lib{pstld}: {hxx ixx txx cxx}{**} $impl_libs $intf_libs
+lib{pstld}: pstld/{hxx cxx}{**} $impl_libs $intf_libs
 
 # Build options.
 #
@@ -28,7 +28,7 @@ else
 # Install into the pstld/ subdirectory of, say, /usr/include/
 # recreating subdirectories.
 #
-{hxx ixx txx}{*}:
+pstld/hxx{**}:
 {
   install         = include/pstld/
   install.subdirs = true

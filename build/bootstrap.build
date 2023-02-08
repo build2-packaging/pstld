@@ -1,4 +1,4 @@
-project = pstld
+project = libpstld
 
 using version
 using config
