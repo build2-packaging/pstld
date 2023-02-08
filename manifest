@@ -4,9 +4,9 @@ version: 0.1.0-a.0.z
 summary: pstld C++ library
 license: LICENSE
 description-file: README.md
-url: https://example.org/pstld
-email: helmesjo@gmail.com
-#build-error-email: helmesjo@gmail.com
+url: https://github.com/mikekazakov/pstld
+# email:
+#build-error-email:
 depends: * build2 >= 0.15.0
 depends: * bpkg >= 0.15.0
 requires: macos
