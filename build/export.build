@@ -1,6 +1,6 @@
 $out_root/
 {
-  include pstld/
+  include libpstld/
 }
 
-export $out_root/pstld/$import.target
+export $out_root/libpstld/$import.target

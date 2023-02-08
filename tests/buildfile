@@ -1,6 +1,6 @@
 import libs = pstld%lib{pstld}
 
-./: exe{single_header_cpp-tests}: src/single_header_cpp/{hxx cxx}{*} $libs
+./: exe{single_header_cpp-tests}: {hxx cxx}{*} $libs
 
 # Build options.
 #
