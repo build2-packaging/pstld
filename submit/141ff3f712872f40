@@ -1,0 +1,5 @@
+: 1
+name: libpstld
+version: 0.1.0
+summary: pstld C++ library
+license: LICENSE
