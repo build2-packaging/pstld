@@ -1,3 +1,1 @@
-# pstld
-
-C++ library
+./upstream/README.md

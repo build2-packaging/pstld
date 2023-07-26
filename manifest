@@ -1,12 +1,11 @@
 : 1
 name: libpstld
-version: 0.1.0
-summary: pstld C++ library
-license: LICENSE
+version: 0.1.0+1
+summary: Experimental implementation of ParallelSTL on top of Grand Central Dispatch aka libdispatch.
+license: MIT
 description-file: README.md
+package-description-file: PACKAGE-README.md
 url: https://github.com/mikekazakov/pstld
-# email:
-#build-error-email:
 depends: * build2 >= 0.16.0
 depends: * bpkg >= 0.16.0
 requires: macos
