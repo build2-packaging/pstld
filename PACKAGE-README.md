@@ -17,7 +17,7 @@ This package provides the `lib{pstld}` library.
 To use it, add the following to your `manifest`:
 
 ```
-depends: libpstld ^0.1.0 ? ($build.host.class == 'macos')
+depends: libpstld ^0.1.0 ? ($build.target.class == 'macos')
 ```
 
 Note that this library is only available on MacOS.
