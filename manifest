@@ -1,6 +1,6 @@
 : 1
 name: libpstld
-version: 0.1.1-a.0.z
+version: 0.1.1
 summary: Experimental implementation of ParallelSTL on top of Grand Central Dispatch aka libdispatch.
 license: MIT
 description-file: README.md
