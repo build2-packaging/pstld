@@ -1,7 +1,9 @@
 cxx.std = latest
 
 using cxx
+using cxx.objcxx
 
+mm{*}: extension = mm
 hxx{*}: extension = h
 cxx{*}: extension = cpp
 

@@ -1,6 +1,17 @@
 import libs = libpstld%lib{pstld}
 
-./: exe{single_header_cpp-tests}: {hxx cxx}{*} $libs
+for d: dir{* -build}
+{
+  # Remove the directory type & trailing slash.
+  dd = $name.directory($d)
+  n = $regex.replace("$dd", "[/\\\]", "")
+  ./: exe{$(n)-test}: \
+    $(n)/{hxx cxx mm}{*} $libs
+  {
+    cxx.coptions += -fobjc-arc
+    cxx.loptions += -fobjc-link-runtime
+  }
+}
 
 # Build options.
 #
