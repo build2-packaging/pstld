@@ -3,16 +3,12 @@ import libs = libpstld%lib{pstld}
 for d: dir{* -build}
 {
   # Remove the directory type & trailing slash.
-  dd = $name.directory($d)
-  n = $regex.replace("$dd", "[/\\\]", "")
-  ./: exe{$(n)-test}: \
-    $(n)/{hxx cxx mm}{*} $libs
-  {
-    cxx.coptions += -fobjc-arc
-    cxx.loptions += -fobjc-link-runtime
-  }
+  ./: exe{$name($d)-test}: \
+    $name($d)/{hxx cxx mm}{*} $libs
 }
 
 # Build options.
 #
+cxx.coptions += -fobjc-arc
+cxx.loptions += -fobjc-link-runtime
 cxx.poptions =+ "-I$out_root" "-I$src_root"
