@@ -1,6 +1,6 @@
 import libs = libpstld%lib{pstld}
 
-for [dir_path] d: {*/ -build/}
+for d [dir_path] : {*/ -build/}
 {
   ./: exe{$string($d)-test}: \
     $d/{hxx cxx mm}{*} $libs
